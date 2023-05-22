@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registeration Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Registeration Form</h1>
+    <p>Please fill out this form to create an account.</p>
+    <form action="#" class="registeration-form">
+      <!-- first fieldset -->
+      <fieldset>
+        <label for="full-name">
+          Enter Your Full Name:
+          <input type="text" id="full-name" name="full-name" required autocomplete="name" />
+        </label>
+        <label for="username">
+          Enter Your Username:
+          <input type="text" id="username" name="username" required autocomplete="username" />
+        </label>
+        <label for="email">
+          Enter Your Email:
+          <input type="email" id="email" name="email" required autocomplete="email" />
+        </label>
+        <label for="new-password">
+          Create a New Password:
+          <input type="password" id="new-password" name="new-password" required autocomplete="current-password" />
+        </label>
+      </fieldset>
+      <!-- second fieldset -->
+      <fieldset>
+        <label for="personal-account">
+          <input type="radio" id="personal-account" name="personal-account" class="inline-field" />
+          Personal Account
+        </label>
+        <label for="business-account">
+          <input type="radio" id="business-account" name="business-account" class="inline-field" />
+          Business Account
+        </label>
+        <label for="terms-and-conditions">
+          <input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" class="inline-field" required />
+          I accept the <a href="#">terms and conditions</a>
+        </label>
+      </fieldset>
+      <!-- third fieldset -->
+      <fieldset>
+        <label for="profile-picture">
+          Upload a profile picture:
+          <input type="file" id="profile-picture" name="file" class="file-field" />
+        </label>
+        <label for="age">
+          Input your age (years):
+          <input type="number" id="age" name="age" min="1" max="120" />
+        </label>
+        <label for="employement">
+          Are you curently employed?
+          <select name="employement" id="employement">
+            <option value="">(select one)</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+          </select>
+        </label>
+        <label for="message">
+          Provide a message:
+          <textarea name="message" id="message" cols="30" rows="5" placeholder="Put your message here..."></textarea>
+        </label>
+      </fieldset>
+      <!-- submit btn -->
+      <input type="submit" class="submit-btn" value="Submit" />
+    </form>
+  </body>
+</html>
